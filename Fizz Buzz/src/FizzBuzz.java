@@ -5,7 +5,8 @@ public class FizzBuzz {
     public static String checkFizzBuzz(int numToCheck){
         boolean isFizz = numToCheck % 3 == 0;
         boolean isBuzz = numToCheck % 5 == 0;
-        int numberInList = numToCheck/10;
+        int get5Inlist = numToCheck / 10;
+        int get3Inlist = numToCheck % 10;
         if (isFizz) {
             if(isBuzz){
                 return OutFizzBuzz;
@@ -14,22 +15,14 @@ public class FizzBuzz {
         }
         else if(isBuzz){
             return OutBuzz;
-        }else if (numberInList == 3){
-            return OutFizz;
-        }else if (numberInList == 5){
-            return OutBuzz;
+        }else {
+            boolean has3Inlist = get5Inlist == 3 || get3Inlist == 3;
+            if (has3Inlist){
+                return OutFizz;
+            }else if (get5Inlist == 5){
+                return OutBuzz;
+            }
         }
         return "" + numToCheck;
     }
-//    public static String checkListNumber(int inputNumber){
-//        int numberInList = inputNumber/10;
-//        if (numberInList == 3){
-//            return OutFizz;
-//        }else if(numberInList == 5)
-//            return OutBuzz;
-//        return ""+inputNumber;
-////    }
-//    public static void main(String[] args) {
-//        checkFizzBuzz(31);
-//    }
 }

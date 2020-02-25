@@ -26,19 +26,32 @@ class FizzBuzzTest {
     @Test
     @DisplayName("FizzBuzz")
     void checkFizzBuzz() {
+
         int n = 15;
         String expected = "FizzBuzz";
-
         String result = FizzBuzz.checkFizzBuzz(n);
         assertEquals(expected,result);
+        
     }
+
     @Test
     @DisplayName("Fizzll")
     void exceedFizzBuzz() {
+
         int n = 31;
         String expected = "Fizz";
-
         String result = FizzBuzz.checkFizzBuzz(n);
         assertEquals(expected,result);
+
+    }
+    @Test
+    @DisplayName("Fizzll with 3")
+    void exceedFizzBuzz3() {
+
+        int n = 13;
+        String expected = "Fizz";
+        String result = FizzBuzz.checkFizzBuzz(n);
+        assertEquals(expected,result);
+
     }
 }
