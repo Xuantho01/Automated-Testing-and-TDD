@@ -6,7 +6,7 @@ public class Factorial {
         } else {
             return NUM_TO_CALCULATOR_FACTORIAL * FactorialCalculator(NUM_TO_CALCULATOR_FACTORIAL - 1);
         }
-        
+
     }
     public static int showResult(int NumToCalculator){
         return FactorialCalculator(NumToCalculator);
