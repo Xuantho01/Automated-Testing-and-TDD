@@ -31,7 +31,7 @@ class FizzBuzzTest {
         String expected = "FizzBuzz";
         String result = FizzBuzz.checkFizzBuzz(n);
         assertEquals(expected,result);
-        
+
     }
 
     @Test
